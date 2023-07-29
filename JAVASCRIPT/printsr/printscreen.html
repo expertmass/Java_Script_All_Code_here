@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <center>
+        <h1>My web</h1>
+        <img src="WhatsApp Image 2022-12-02 at 14.31.30.jpg" height="250px" width="300px" alt="">
+        <h1>Printable DATA</h1>
+        <p id="data">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+            recusandae
+            consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+            ducimus
+            eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+            Excepturi
+            in quasi nesciunt delectus libero reiciendis deleniti ut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+            recusandae
+            consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+            ducimus
+            eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+            Excepturi
+            in quasi nesciunt delectus libero reiciendis deleniti ut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+            recusandae
+            consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+            ducimus
+            eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+            Excepturi
+            in quasi nesciunt delectus libero reiciendis deleniti ut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+            recusandae
+            consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+            ducimus
+            eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+            Excepturi
+            in quasi nesciunt delectus libero reiciendis deleniti ut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+            recusandae
+            consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+            ducimus
+            eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+            Excepturi
+            in quasi nesciunt delectus libero reiciendis deleniti ut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+            recusandae
+            consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+            ducimus
+            eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+            Excepturi
+            in quasi nesciunt delectus libero reiciendis deleniti ut.
+        </p>
+        <button onclick="printPage()"> Print content</button>
+    
+    <p >
+       
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+        recusandae
+        consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+        ducimus
+        eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+        Excepturi
+        in quasi nesciunt delectus libero reiciendis deleniti ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+        recusandae
+        consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+        ducimus
+        eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+        Excepturi
+        in quasi nesciunt delectus libero reiciendis deleniti ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+        recusandae
+        consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+        ducimus
+        eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+        Excepturi
+        in quasi nesciunt delectus libero reiciendis deleniti ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+        recusandae
+        consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+        ducimus
+        eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+        Excepturi
+        in quasi nesciunt delectus libero reiciendis deleniti ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+        recusandae
+        consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+        ducimus
+        eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+        Excepturi
+        in quasi nesciunt delectus libero reiciendis deleniti ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci consequatur. Alias facilis
+        recusandae
+        consequuntur? Dolores, adipisci repudiandae temporibus, tenetur facilis voluptatum aperiam aspernatur
+        ducimus
+        eius rerum sint impedit obcaecati, non recusandae vel nostrum rem! Ipsam eos similique atque rem hic?
+        Excepturi
+        in quasi nesciunt delectus libero reiciendis deleniti ut.
+    </p>
+</center>
+</body>
+<script>
+    function printPage(){
+     //   window.print();
+
+     var body=document.getElementById('body').innerHTML;
+     var data=document.getElementById('data').innerHTML;
+
+     document.getElementById('body').innerHTML=data;
+
+        window.print();
+        document.getElementById('body').innerHTML=body; 
+    }
+</script>
+</html>

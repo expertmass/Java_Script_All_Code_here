@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clocks</title>
+    <style>
+        h1{ text-align: center;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p{
+         font-size: 40px;;
+        }
+    </style>
+</head>
+<body onload="showTime()">
+
+    <h1>Clock</h1>
+    <center><p>क्या देख रहा  😀तेरा टाइम खराब है🤣
+
+    </p></center>
+</body>
+<script>
+function showTime(){
+    var d= new Date();
+    var h=d.getHours();
+    var m= d.getMinutes();
+    var s= d.getSeconds();
+
+    var session ="AM";
+    if(h>=12){
+        session="PM";
+    }
+
+    if(h>12){
+        h=h-12;
+    }
+   
+    h= h<10 ? "0"+h : h;
+    m= m<10 ? "0"+m : m;
+    s= s<10 ? "0"+s : s;
+    
+    var time= h + " : " + m + " : " + s + " " + session;
+    document.getElementsByTagName('h1')[0].innerText=time;
+    setTimeout(showTime, 1000);
+}
+</script>
+</html>
